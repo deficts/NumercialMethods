@@ -67,10 +67,11 @@ roots=[]
 bairstow(a,r,s,roots)
 print("\nRaices de")
 for i in range(g):
-    print(str(a[g-1-i])+"x^"+str(g-1-i))
+    print("+"+str(a[g-1-i])+"x^"+str(g-1-i), end="")
+print("\n")
 for r in roots:
-  print("R" + str(c) + " = " + str(r))
-  c += 1
+    print("R" + str(c) + " = " + str(r))
+    c += 1
 
 '''
 c=0
@@ -82,6 +83,6 @@ s = random.random()
 bairstow(a,r,s,roots)
 print("\nRaices => \n")
 for r in roots:
-  print("R" + str(c) + " = " + str(r))
-  c += 1
+    print("R" + str(c) + " = " + str(r))
+    c += 1
 '''
