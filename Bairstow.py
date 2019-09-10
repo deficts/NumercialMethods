@@ -56,9 +56,26 @@ def bairstowG(a,r,s,g,roots):
         roots.append(chicharronera(1.0,-r,-s)[1])
         return bairstowG(b[2:],r,s,g-2,roots)
 
+g=int(input("Ingresa el grado de tu polinomio:\n"))+1
+a=[]
+for i in range(g):
+    a.append(int(input("Ingresa el valor con grado "+str(i)+"\n")))
+c=0
+r = random.random()
+s = random.random()
+roots=[]
+bairstow(a,r,s,roots)
+print("\nRaices de")
+for i in range(g):
+    print(str(a[g-1-i])+"x^"+str(g-1-i))
+for r in roots:
+  print("R" + str(c) + " = " + str(r))
+  c += 1
+
+'''
 c=0
 roots = []
-#parametros de est forma 1+x-2x^2+3x^3-4x^4+5x^5-6x^6
+parametros de est forma 1+x-2x^2+3x^3-4x^4+5x^5-6x^6
 a = [1,+1,-2,+3,-4,+5,-6]
 r = random.random()
 s = random.random()
@@ -67,5 +84,4 @@ print("\nRaices => \n")
 for r in roots:
   print("R" + str(c) + " = " + str(r))
   c += 1
-
-  a = input("Ingresa dato")
+'''
