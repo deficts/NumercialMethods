@@ -22,7 +22,4 @@ def crearPolinomio(x,y):
     polinomio=sympify(polinomio)
     polinomio=expand(polinomio)
     #Regresamos el polinomio creado
-
     return poly(polinomio).coeffs()
-
-print(crearPolinomio([2,3,4,5,6,7],[0.5,.333,.25,.2,.1667,.1429]))
