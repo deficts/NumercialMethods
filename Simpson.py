@@ -1,3 +1,5 @@
+#By Diego Arredondo Reyes A01633932 and Santiago Aragon Sanchez A01634433
+
 def simpson38(h,f0,f1,f2,f3):
     return (3/8)*h*(f0+3*f1+3*f2+f3)
 
@@ -32,4 +34,8 @@ def simpson(a):
 
 a=[[-3,-1,1,3,5],[-3375,-343,1,729,4913]]
 
+b=[[-3,-1.4,0.2,1.8,3.4,5],[-3375,-636.056,-10.648,74.088,1191.02,4913]]
+
 print(simpson(a))
+
+print(simpson(b))
